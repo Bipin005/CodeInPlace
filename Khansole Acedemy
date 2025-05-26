@@ -1,0 +1,24 @@
+import random
+
+def main():
+    print("Khansole Academy")
+    # Generate two random 2-digit numbers
+    num1 = random.randint(10, 99)
+    num2 = random.randint(10, 99)
+    
+    # Print the question in the exact expected format
+    print(f"What is {num1} + {num2}?")
+    
+    # Get user input
+    user_answer = int(input("Your answer: "))
+    
+    # Check and print if correct
+    if user_answer == num1 + num2:
+        print("Correct!")
+    else:
+        print(f"Incorrect.")
+        print(f"The expected answer is {num1 + num2}.")
+    
+    
+if __name__ == '__main__':
+    main()
